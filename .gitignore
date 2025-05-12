@@ -1,1 +1,4 @@
-A_telemed\node_modules
+A_telemed/node_modules
+B_forum/node_modules
+C_Questionier/node_modules
+generate_keys/node_modules
