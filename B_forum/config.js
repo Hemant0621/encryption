@@ -11,7 +11,7 @@ module.exports = {
   mongoUri: process.env.MONGODB_URI,
   jwtSecret: process.env.JWT_SECRET,
 
-  recepient: process.env.recepient,
+  recipient: process.env.recipient,
   privateKey: loadKey(process.env.forum_PRIVATE_KEY_BASE64),
   publicKey:  [
     { telemed: loadKey(process.env.telemed_PUBLIC_KEY_BASE64) },

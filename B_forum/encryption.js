@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 const {
-  recepient,
+  recipient,
   privateKey,
   publicKey,
 } = require("./config");
@@ -39,7 +39,7 @@ function encryptHybrid(plaintext) {
 function decryptHybrid(payload) {
   const { random, authTag, ciphertext, wrappedKeys } = payload;
   // find entry for this recipient
-  const entry = wrappedKeys.find((w) => w.recipient === recepient);
+  const entry = wrappedKeys.find((w) => w.recipient === recipient);
   if (!entry) throw new Error("No wrapped key for this recipient");
 
   // unwrap AES key
